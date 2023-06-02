@@ -41,6 +41,7 @@ details, and Accessing student details.
 
 ![Screenshot (815)](https://github.com/shreyansh28801/Student-Registration-System/assets/81692600/a4978c56-79d8-4d16-a305-4253b08f9a0d)
 
+![Screenshot (818)](https://github.com/shreyansh28801/Student-Registration-System/assets/81692600/50b67eba-6864-4696-91f2-3be077e5d6aa)
 
 
 
