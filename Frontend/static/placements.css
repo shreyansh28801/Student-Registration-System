@@ -1,0 +1,50 @@
+.placements-header{
+    color: darkblue;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.placements-text-header{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.placements-text {
+    font-size: 20px;
+    padding-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#placements {
+    width: 85%;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.placements_statistics_button{
+    padding: 12px 10px;
+    background-image: linear-gradient(to right, #611b20 , #b00107);
+    border: 0;
+    font-size: 20px;
+    border-radius: 30px;
+    color: #FFF;
+    margin-right: 5px;
+    font-family: "latoregular", "Helvetica", "Verdana", sans-serif;
+    -webkit-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
+    transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
+    text-decoration:none !important;
+    cursor: pointer;
+}
+.placements_statistics_button:hover{
+    background-image: linear-gradient(to right, #83252c , #c9060d);
+}

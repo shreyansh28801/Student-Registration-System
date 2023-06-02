@@ -1,0 +1,29 @@
+.about-us-header{
+    color: darkblue;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: top;
+    justify-content: top;
+}
+
+#image {
+    max-width: 100%;
+    padding-left: 40px;
+}
+.about-us-image {
+    flex-basis: 300%
+}
+.about-us-text {
+    margin-right: 100px;
+    font-size: 20px;
+    padding-left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}

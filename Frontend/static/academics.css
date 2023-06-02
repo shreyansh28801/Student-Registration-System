@@ -1,0 +1,93 @@
+.academics-header{
+    color: darkblue;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.academics-container {
+    display: flex;
+    align-items: top;
+    justify-content: top;
+}
+
+.academics-text {
+    font-size: 20px;
+    padding-left: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px 30px;
+}
+
+.academics-text-course{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.academics-bachelor-table{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;   
+    font-family: 'Open Sans', sans-serif;
+}
+
+table.redTable {
+    border: 2px solid #A40808;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+table.redTable tbody td {
+    font-size: 13px;
+    
+}
+table.redTable tr:nth-child(even) {
+    background: #F5C8BF;
+}
+table.redTable thead {
+    background: #A40808;
+}
+table.redTable thead th {
+    font-size: 19px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #A40808;
+}
+table.redTable thead th:first-child {
+    border-left: none;
+}
+
+table.redTable tfoot {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #A40808;
+}
+table.redTable tfoot td {
+    font-size: 13px;
+}
+table.redTable tfoot .links {
+    text-align: right;
+}
+table.redTable tfoot .links a{
+    display: inline-block;
+    background: #FFFFFF;
+    color: #A40808;
+    padding: 2px 8px;
+    border-radius: 5px;
+}

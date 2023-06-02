@@ -1,0 +1,172 @@
+<!-- Placements Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/placements.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv = "refresh" content = "5; url = http://127.0.0.1:5500/Lab-5/login.html" /> -->
+    <title>Placements | University of CambridgeHome Page</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/University_of_Cambridge_coat_of_arms.svg">
+</head>
+<body onload="checkLoginStatus(event)">
+
+    <!-- top-bar -->
+    <div class="topbar">
+        <div>
+            <span class="box text">Admission Test-2021 (Last date to apply 21th May, 2021)</span>
+        </div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div>
+            <span><b><a href="./form.html" class="box link">Apply Now →</a></b></span>
+        </div>
+    </div>
+
+    <!-- main-menu -->
+    <div class="mainmenu">
+        <div class="logo">
+            <img src="../resources/college-logo.png"/ height="52px" onclick="window.open('index.html','_self')">
+        </div>
+        <div>
+            <span>
+                <button class="box button" onclick="window.open('about_us.html','_self')">About Us</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('academics.html','_self')">Academics</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('news.html','_self')">News</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('placements.html','_self')">Placements</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('gallery.html','_self')">Gallery</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('campus_life.html','_self')">Campus Life</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('view_data.html','_self')">Students</button>
+            </span>
+        </div>   
+        <div>
+            <button id="login" class="box button2" onclick="goToLogin()" onmouseover="mouseIn()" onmouseout="mouseOut()">Login</button>
+        </div>
+    </div>
+
+    <!-- Placements pages -->
+    <div class="placements">
+        <div class="placements-header">
+            Placements @ University of Cambridge
+        </div>
+        <div class="placements-text-header">
+            Three Reasons to Recruit from University of Cambridge:
+        </div>
+        <div class="placements-text">
+            <b>Techno-Managers:</b> With the ever increasing pace at which technology is expanding , its reach in today’s dynamic 
+            business world and with the ever growing need for unparalleled demands, the onus is on developing managers 
+            with that perfect touch of technical expertise. University of Cambridge is just one of the few universities in the country 
+            where the perfect blend of engineers meets management, producing the techno-managers of tomorrow.
+            <br><br>
+            <b>Dual Specialization:</b> One of the unique features of the course is the provision for a plethora of subjects to choose from.
+            Getting to specialize in 2 of the 5 options on offer (Finance, Marketing, Operations, IT, Human Resource Management) 
+            not only provides the student with varied future options but expands his/her horizons and enable to stand out in this 
+            highly competitive environment.
+            <br><br>
+            <b>Infrastructure:</b> With the best possible infrastructure and state of art library facility available at their disposal, 
+            students at University of Cambridge enjoy the privilege of having access to over 1,70,000 books on varied subjects , over 300 journals, 
+            databases like EBSCO's, CMIE (I-CUBE) coupled with 24x7 seamless high speed wifi connectivity . Surely, University of Cambridge is as 
+            close one can get to 'living a dream'!
+        </div>
+        <div class="placements-text-header">
+            Rigorous Selection Process:
+        </div>
+        <div class="placements-text">
+            One of the pre-requisites for applying is a 1stclass engineering or post graduate degree in any discipline
+            <br><br>
+            CAT tests quantitative aptitude, analytical and verbal skills
+            <br><br>
+            Short listing for WAT/PI based on CAT scores, academic consistency, work experience and achievements
+        </div>
+        <div class="placements-text-header">
+            Placement Statistics:
+        </div>
+        <div class="placements-text">
+            Highest Package: 0.1 Million $ <br>
+            Average Package: 50000 $ <br>
+        </div>
+        <div class="placements-text-header">
+            List of Participating Companies in Recruitment:
+        </div>
+        <img src="../resources/placements2.jpg" id="placements">
+        <div class="placements-text-header">
+            Detailed Statistics:
+        </div>
+        <div class="placements-text">
+            <a href="placement_statistics.html"><button class="placements_statistics_button">Click here</button></a> to see the detailed placement statistics.
+        </div>
+    </div>
+
+    <!-- bottom-section -->
+    <div class="bottom-section">
+        <div class="column-container">
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>PARENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Counselling Division</div><br>
+                    <div>Hotels in England</div><br>
+                    <div>Guest House</div><br>
+                    <div>Parent Login</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>UNIVERSITY STUDENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>People Orbit</div><br>
+                    <div>General Grievance Redressal Committee</div><br>
+                    <div>Institute of Emminence (IoE)</div><br>
+                    <div>Anti Ragging Committee</div><br>
+                    <div>Industrial Visit(Format & Guidelines)</div><br>
+                    <div>NATS [National Apprenticeship Training Scheme]</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>OTHER LINKS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Right to Information</div><br>
+                    <div>About Research at Cambridge</div><br>
+                    <div>Safety</div><br>
+                    <div>Courses in Education</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>  
+            </div>
+        </div>
+        <div class="social-links">
+            <div class="social-content-text">FOLLOW US:</div>
+            <div class="social-content-img"><img src="../resources/twitter.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/facebook.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/linkedin.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/instagram.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/github.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/youtube.svg" width="20px"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">© 2021 by University of Cambridge</div>
+            <div class="footer-content">Privacy Policy</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/index.js"></script>  
+</body>
+</html>
+

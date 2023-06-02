@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/campus_life.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv = "refresh" content = "5; url = http://127.0.0.1:5500/Lab-5/login.html" /> -->
+    <title>Campus Life | University of CambridgeHome Page</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/University_of_Cambridge_coat_of_arms.svg">
+</head>
+<body onload="checkLoginStatus(event)">
+
+    <!-- top-bar -->
+    <div class="topbar">
+        <div>
+            <span class="box text">Admission Test-2021 (Last date to apply 21th May, 2021)</span>
+        </div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div>
+            <span><b><a href="./form.html" class="box link">Apply Now →</a></b></span>
+        </div>
+    </div>
+
+    <!-- main-menu -->
+    <div class="mainmenu">
+        <div class="logo">
+            <img src="../resources/college-logo.png"/ height="52px" onclick="window.open('index.html','_self')">
+        </div>
+        <div>
+            <span>
+                <button class="box button" onclick="window.open('about_us.html','_self')">About Us</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('academics.html','_self')">Academics</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('news.html','_self')">News</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('placements.html','_self')">Placements</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('gallery.html','_self')">Gallery</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('campus_life.html','_self')">Campus Life</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('view_data.html','_self')">Students</button>
+            </span>
+        </div>     
+        <div>
+            <button id="login" class="box button2" onclick="goToLogin()" onmouseover="mouseIn()" onmouseout="mouseOut()">Login</button>
+        </div>
+    </div>
+
+    <!--Campus life section-->
+    <div class="banner">
+        <span>Campus Life</span>
+    </div>
+    
+    <div class="campus-life">
+        <div class="title">
+            <span>"</span>
+                Life at any University is always great, but at University of Cambridge, it's a special blend of a 
+                modern life and traditional values.
+                History, it is said, is a great teacher, and given our glorious and long heritage of over 450 years, 
+                we have had a long time to learn! Combine that with the latest of cutting-edge technologies, and 
+                you have UoC in a nutshell....
+            <span>"</span>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="row">
+            <div class="image left"><img src="../resources/gallery3.jpeg" id="image"></div>
+            <div class="text right">
+            <span>Hostels</span>
+            <p>Our homes away from home are as modern as they can be.
+            More importantly, though have spawned the cultures that make the campus an unforgettable experience. 
+            It's here that  midnight cricket tournaments and so many other things find expression.</p>
+            <a><button class="campus-button">More</button></a></div>
+        </div>
+         <div class="row">
+            <div class="image left"><img src="../resources/gallery12.jpg" id="image"></div>
+            <div class="text right">
+            <span>Clubs</span>
+            <p>Clubs at UoC are the best place to relax and recharge with the indoor sports facilities including seven Billiards & Snooker Tables, Carrom boards, Chess boards, Table Tennis facilities and a Foosball table.</p>
+            <a><button class="campus-button">More</button></a></div>
+        </div>
+         <div class="row">
+            <div class="image left"><img src="../resources/sports.jpeg" id="image"></div>
+            <div class="text right">
+            <span>Sports</span>
+            <p>Physical recreation through games and sports has been an important part of the Institute since its inception.Today, the Institute has some of the best facilities in a number of games and sports and awards proficiencies in 14 games. </p>
+            <a><button class="campus-button">More</button></a></div>
+        </div>
+        <div class="row">
+            <div class="image left"><img src="../resources/gallery13.jpg" id="image"></div>
+            <div class="text right">
+            <span>Groups</span>
+            <p>The ubiquitous student groups are what set UoC apart from other institutes in England, here like-minded work together toward a certain goal- be it getting out a magazine on time, or putting together a one-hour concert, or making a trip to a nearby village for social work.</p>
+            <a><button class="campus-button">More</button></a></div>
+        </div>
+         <div class="row">
+            <div class="image left"><img src="../resources/gallery21.jpg" id="image"></div>
+            <div class="text right">
+            <span>Guest Houses</span>
+            <p>University of Cambridge strongly believes in the old Indian adage "Athithi Devo Bhava". We give our visitors the best facilities be it in terms of service, ambience or food. The campus has three guest houses to accommodate the guests and delegates who visit the campus.</p>
+            <a><button class="campus-button">More</button></a></div>
+        </div>
+         <div class="row">
+            <div class="image left"><img src="../resources/achievements-1.jpg" id="image"></div>
+            <div class="text right">
+            <span>Facilities</span>
+            <p> Right from important institutions of Bank, Post Office, Institute Hospital, to places of Worship as well as hangout facilities, these places form a very essential part of our lives at University of Cambridge.</p>
+            <a><button class="campus-button">More</button></a></div>
+        </div>
+        </div>
+
+
+
+    <!-- bottom-section -->
+    <div class="bottom-section">
+        <div class="column-container">
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>PARENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Counselling Division</div><br>
+                    <div>Hotels in England</div><br>
+                    <div>Guest House</div><br>
+                    <div>Parent Login</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>UNIVERSITY STUDENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>People Orbit</div><br>
+                    <div>General Grievance Redressal Committee</div><br>
+                    <div>Institute of Emminence (IoE)</div><br>
+                    <div>Anti Ragging Committee</div><br>
+                    <div>Industrial Visit(Format & Guidelines)</div><br>
+                    <div>NATS [National Apprenticeship Training Scheme]</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>OTHER LINKS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Right to Information</div><br>
+                    <div>About Research at Cambridge</div><br>
+                    <div>Safety</div><br>
+                    <div>Courses in Education</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>  
+            </div>
+        </div>
+        <div class="social-links">
+            <div class="social-content-text">FOLLOW US:</div>
+            <div class="social-content-img"><img src="../resources/twitter.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/facebook.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/linkedin.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/instagram.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/github.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/youtube.svg" width="20px"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">© 2021 by University of Cambridge</div>
+            <div class="footer-content">Privacy Policy</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/index.js"></script>  
+</body>
+</html>
+

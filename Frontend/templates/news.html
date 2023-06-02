@@ -1,0 +1,223 @@
+<!-- IT-Workshop-Project -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv = "refresh" content = "5; url = http://127.0.0.1:5500/Lab-5/login.html" /> -->
+    <title>News | University of CambridgeHome Page</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/University_of_Cambridge_coat_of_arms.svg">
+</head>
+<body onload="checkLoginStatus(event)">
+
+    <!-- top-bar -->
+    <div class="topbar">
+        <div>
+            <span class="box text">Admission Test-2021 (Last date to apply 21th May, 2021)</span>
+        </div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div>
+            <span><b><a href="./form.html" class="box link">Apply Now →</a></b></span>
+        </div>
+    </div>
+
+    <!-- main-menu -->
+    <div class="mainmenu">
+        <div class="logo">
+            <img src="../resources/college-logo.png"/ height="52px" onclick="window.open('index.html','_self')">
+        </div>
+        <div>
+            <span>
+                <button class="box button" onclick="window.open('about_us.html','_self')">About Us</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('academics.html','_self')">Academics</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('news.html','_self')">News</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('placements.html','_self')">Placements</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('gallery.html','_self')">Gallery</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('campus_life.html','_self')">Campus Life</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('view_data.html','_self')">Students</button>
+            </span>
+        </div>     
+        <div>
+            <button id="login" class="box button2" onclick="goToLogin()" onmouseover="mouseIn()" onmouseout="mouseOut()">Login</button>
+        </div>
+    </div>
+    
+    <!-- news section -->
+    <div class="news-container">
+        <div class="news-main-heading">
+            <p>News & Achievements</p>
+        </div>
+    </div>
+
+    <!-- bulletin-board  -->
+    <div class="news-board">
+        <div class="news-board-header">
+            Latest News
+        </div>
+        <div class="bulletin-board-content">
+            <div class="announcements">
+                <div class="board">
+                    <div class="board-img">
+                        <br>
+                        <img src="../resources/news-1.webp" width="450px" height="200px"><br>
+                    </div>
+                    <div class="news-content">
+                        <b>Workshop with school students to promote science and tech careers</b><br><br>
+                        University of Cambridge organised a two-day workshop on December 18 and 19, 2021 to motivate school students to pursue careers in the field of science and technology.<br>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="board">
+                    <div class="board-img">
+                        <br>
+                        <img src="../resources/news2.jpeg" width="450px" height="200px"><br>
+                    </div>
+                    <div class="news-content">
+                        <b>Launches Bio-Incubator To Develop Commercially Viable Products</b><br><br>
+                        University of Cambridge has launched the Bio Incubator to provide assistance to the students and entrepreneurs to develop commercially viable products.<br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievements">
+                <div class="board">
+                    <div class="board-img">
+                        <br>
+                        <img src="../resources/news-3.jpg" width="386px" height="200px"><br>
+                    </div>
+                    <div class="news-content">
+                        <b>Innovation & Entrepreneurship Workshop - 2022</b><br><br>
+                        University of Cambridge has conducted the Innovation & Entrepreneurship Workshop on 5th Jan, 2022, inspiring many students to create new gadgets. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- horizontal line -->
+    <div class="separator"></div>
+    <!-- horizontal line -->
+    <div class="separator"></div>
+    <!-- horizontal line -->
+    <div class="separator"></div>
+
+     <!-- bulletin-board  -->
+     <div class="news-board">
+        <div class="news-board-header">
+            Recent Achievements
+        </div>
+        <div class="bulletin-board-content">
+            <div class="announcements">
+                <div class="board">
+                    <div class="board-img">
+                        <br>
+                        <img src="../resources/achievements-1.jpg" width="450px" height="200px"><br>
+                    </div>
+                    <div class="news-content">
+                        <b>Bags First Position In "Most Innovative Institutions" Category By CII</b><br><br>
+                        The University of Cambridge has been awarded the top position under the most innovative research institutions category by the CII. <br>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="board">
+                    <div class="board-img">
+                        <br>
+                        <img src="../resources/achievements-2.jpg" width="450px" height="200px"><br>
+                    </div>
+                    <div class="news-content">
+                        <b>University of Cambridge wins Smart Move Urban Mobility Challenge.</b><br><br>
+                        University of Cambridge won the Smart Move Urban Mobility Challenge, by developing a passenger information system to predict the crowding levels in the public transit system.<br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievements">
+                <div class="board">
+                    <div class="board-img">
+                        <br>
+                        <img src="../resources/achievements-3.jpg" width="386px" height="200px"><br>
+                    </div>
+                    <div class="news-content">
+                        <b>University of Cambridge Wins GRIHA Trophy At NASA </b><br><br>
+                        University of Cambridge wins GRIHA Trophy at NASA for the design of Terminal Building at Bagdogra Airport. The trophy was awarded to the students at a virtual felicitation ceremony.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom-section -->
+    <div class="bottom-section">
+        <div class="column-container">
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>PARENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Counselling Division</div><br>
+                    <div>Hotels in England</div><br>
+                    <div>Guest House</div><br>
+                    <div>Parent Login</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>UNIVERSITY STUDENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>People Orbit</div><br>
+                    <div>General Grievance Redressal Committee</div><br>
+                    <div>Institute of Emminence (IoE)</div><br>
+                    <div>Anti Ragging Committee</div><br>
+                    <div>Industrial Visit(Format & Guidelines)</div><br>
+                    <div>NATS [National Apprenticeship Training Scheme]</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>OTHER LINKS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Right to Information</div><br>
+                    <div>About Research at Cambridge</div><br>
+                    <div>Safety</div><br>
+                    <div>Courses in Education</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>  
+            </div>
+        </div>
+        <div class="social-links">
+            <div class="social-content-text">FOLLOW US:</div>
+            <div class="social-content-img"><img src="../resources/twitter.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/facebook.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/linkedin.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/instagram.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/github.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/youtube.svg" width="20px"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">© 2021 by University of Cambridge</div>
+            <div class="footer-content">Privacy Policy</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/index.js"></script>  
+</body>
+</html>
+

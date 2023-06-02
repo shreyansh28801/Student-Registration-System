@@ -1,0 +1,103 @@
+.new-entry-button{
+    background-image: linear-gradient(to left, #611b20 , #b00107);
+    color: rgb(246,246,246);
+    padding: 15px 20px;
+    font-weight: bolder;
+    border: none;
+    margin: 25px 50px 25px 100px;
+    border-radius: 6px;
+    width: 200px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.view-data-button{
+    background-image: linear-gradient(to left, #611b20 , #b00107);
+    color: rgb(246,246,246);
+    padding: 15px 20px;
+    font-weight: bolder;
+    border: none;
+    margin: 25px 0px 25px 100px;
+    border-radius: 6px;
+    width: 200px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.new-entry-button:hover{
+    background-image: linear-gradient(to left, #83252c , #c9060d);
+}
+
+.view-data-button:hover{
+    background-image: linear-gradient(to left, #83252c , #c9060d);
+}
+.student-image img{
+    border: 1px solid rgba(128, 128, 128, 0.13);
+    border-radius: 500px;
+    margin: 10px 5px 10px 100px;
+}
+.form-heading{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.student-heading{
+    margin: 0px 10px 0px;
+    padding: 40px;
+}
+.new-entry-image{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.success{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight:600;
+    margin: 50px 0px;
+}
+.new-entry-view-data-div{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.add-another-entry-btn{
+    background-image: linear-gradient(to left, #194b09 , #64a550);
+    color: rgb(246,246,246);
+    padding: 15px 20px;
+    font-weight: bolder;
+    border: none;
+    margin: 25px 50px 25px 50px;
+    border-radius: 6px;
+    width: 250px;
+    height: 60px;
+
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.add-another-entry-btn:hover{
+    background-image: linear-gradient(to left, #397526 , #7eb96c);
+}
+.view-data-btn{
+    background-image: linear-gradient(to left, #194b09 , #64a550);
+    color: rgb(246,246,246);
+    padding: 15px 20px;
+    font-weight: bolder;
+    border: none;
+    margin: 25px 50px 25px 50px;
+    border-radius: 6px;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.view-data-btn:hover{
+    background-image: linear-gradient(to left, #397526 , #7eb96c);
+}

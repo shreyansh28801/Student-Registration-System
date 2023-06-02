@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../static/style.css"/>
+    <title>Admission Form | University of Cambridge</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/University_of_Cambridge_coat_of_arms.svg"/>
+</head>
+<body onload="checkLoginStatus(event)">
+    <div class="topbar">
+        <div>
+            <span class="box text">Admission Test-2021 (Last date to apply 21th May, 2021)</span>
+        </div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div>
+            <span><b><a href="./form.html" class="box link">Apply Now →</a></b></span>
+        </div>
+    </div>
+
+    <!-- main-menu -->
+    <div class="mainmenu">
+        <div class="logo">
+            <img src="../resources/college-logo.png" height="56px" onclick="window.open('index.html','_self')"/>
+        </div>
+        <div>
+            <span>
+                <button class="box button" onclick="window.open('about_us.html','_self')">About Us</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('academics.html','_self')">Academics</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('news.html','_self')">News</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('placements.html','_self')">Placements</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('gallery.html','_self')">Gallery</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('campus_life.html','_self')">Campus Life</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('view_data.html','_self')">Students</button>
+            </span>
+        </div>     
+        <div>
+            <button id="login" class="box button2" onclick="goToLogin()" onmouseover="mouseIn()" onmouseout="mouseOut()">Login</button>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div id="form">
+        <div class="form-heading">
+            <img src="../resources/admission_form2.png" width="60px"/>
+            &nbsp;&nbsp;&nbsp;ADMISSION FORM
+        </div>
+        <form>
+            <div class="form-subheading">
+                Personal Details:
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <label class="required label-tag" for="firstname">First Name:</label><br />
+                    <input class="input" type="text" placeholder = "eg. John" id="firstname" autocomplete="off" name="firstname" /><br /><br />
+                    <label class="required label-tag" for="gender">Gender:</label><br />
+                    <select name="gender" id="gender" >
+                        <option placeholder = "Select a gender" value="" >----Select a gender----</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Transgender">Transgender</option>
+                    </select>
+                    <br/><br/>
+                    <label class="required label-tag" for="student">Student Email-ID:</label><br />
+                    <input class="input" type="text" placeholder = "eg. johnsmith@gmail.com" id="student" autocomplete="disabled" name="student" /><br /><br />
+                </div>
+                
+                <div class="form-content">
+                    <label class="label-tag" for="lastname">Middle Name:</label><br />
+                    <input class="input" type="text" placeholder = "eg. Blair" id="lastname" autocomplete="off" name="lastname"/><br /><br />
+                    <label class="required label-tag" for="dob">Date of Birth:</label><br />
+                    <input class="input" type="date" id="birthday" name="birthday" /><br/><br/>
+                    <label class="required label-tag" for="phone">Mobile No.</label><br/>
+                    <input class="input" type="tel" placeholder="eg. +91 9123456789"  id="phone" name="phone" autocomplete="off" /><br/><br/>
+                </div>
+    
+                <div class="form-content">
+                    <label class="required label-tag" for="lastname">Last Name:</label><br />
+                    <input class="input" type="text" placeholder = "eg. Smith" id="lastname" autocomplete="off" name="lastname" /><br /><br />
+                    <label class="required label-tag"  for="nationality">Nationality:</label><br />
+                    <input class="input" type="text" placeholder = "eg. Indian" id="nationality" autocomplete="off" name="nationality" /><br /><br />
+                    <label class="required label-tag" for="Religion">Religion:</label><br />
+                    <select name="Religion" id="Religion" >
+                        <option placeholder = "Select a Religion" value="" >----Select a Religion----</option>
+                        <option value="Hindu">Hinduism</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Christianity">Christianity</option>
+                        <option value="Buddhism">Buddhism</option>
+                        <option value="Sikkhism">Sikkhism</option>
+                        <option value="Jainism">Jainism</option>
+                    </select>
+                    <br/><br/>
+                </div>
+                
+            </div>
+            <div class="form-subheading">
+                Parents' Details:
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <label class="required label-tag" for="Father's Name">Father's Name:</label><br />
+                    <input class="input" type="text" placeholder = "eg. John" id="Father's Name" autocomplete="off" name="Father's Name" /><br /><br />
+                    <label class="required label-tag" for="Mother's Name">Mother's Name:</label><br />
+                    <input class="input" type="text" placeholder = "eg. John" id="Mother's Name" autocomplete="off" name="Mother's Name" /><br /><br />
+                </div>
+                
+                <div class="form-content">
+                    <label class="required label-tag" for="phone">Mobile No.</label><br/>
+                    <input class="input" type="tel" placeholder="eg. +91 9123456789"  id="phone" name="phone" autocomplete="off" /><br/><br/>
+                    <label class="required label-tag" for="phone">Mobile No.</label><br/>
+                    <input class="input" type="tel" placeholder="eg. +91 9123456789"  id="phone" name="phone" autocomplete="off" /><br/><br/>
+                </div>
+    
+                <div class="form-content">
+                    <label class="required label-tag" for="mother">Email-ID:</label><br />
+                    <input class="input" type="text" placeholder = "eg. johnsmith@gmail.com" id="mother" autocomplete="disabled" name="mother" /><br /><br />
+                    <label class="required label-tag" for="mother">Email-ID:</label><br />
+                    <input class="input" type="text" placeholder = "eg. johnsmith@gmail.com" id="mother" autocomplete="disabled" name="mother" /><br /><br />
+                </div>
+            </div>
+            
+            <div class="form-subheading">
+                Permanent Address:
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <label class="required label-tag" for="Street 1">Street 1:</label><br />
+                    <input class="input" type="text" placeholder = "eg. Gandhinagar Street" autocomplete="off" name="Street-1" /><br /><br />
+                    <label class="required label-tag" for="City">City:</label><br />
+                    <input class="input" type="text" placeholder = "eg. Mumbai" autocomplete="off" name="City" /><br /><br />
+                </div>  
+    
+                <div class="form-content">
+                    <label class="label-tag" for="Street 2">Street 2:</label><br/>
+                    <input class="input" type="tel"  id="Street 2" name="Street 2" autocomplete="off" /><br/><br/>
+                    <label class="required label-tag" for="Postal Code">Postal Code:</label><br />
+                    <input class="input" type="text" placeholder = "eg. 400001" autocomplete="off" name="Postal Code" /><br /><br />
+                </div>
+    
+                <div class="form-content">
+                    <label class="label-tag" for="Street 3">Street 3:</label><br />
+                    <input class="input" type="text" id="Street 3" autocomplete="disabled" name="Street 3" /><br /><br />
+                    <label class="required label-tag" for="State">State:</label><br />
+                    <input class="input" type="text" placeholder = "Maharashtra" autocomplete="off" name="State" /><br /><br />
+                </div>
+            </div>
+    
+            <div class="form-subheading">
+                Course Registration Details:
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="required radio-text">Admission Type</div>
+                    <div>
+                        <span class="radio-content">
+                            <input class="input" type="radio" id="Freshman" name="Admission Type" value="Admission Type" />
+                            <label class="radio-content" for="Freshman">Freshman</label>
+                        </span>
+                        <span class="radio-content">
+                            <input class="input" type="radio" id="Transferee" name="Admission Type" value="Admission Type" />
+                            <label class="radio-content" for="Transferee">Transferee</label>
+                        </span>
+                    </div>
+                </div>  
+    
+                <div class="form-content">
+                    <label class="required label-tag" for="Course opting for">Course opting for:</label><br />
+                    <select name="Course opting for" id="Course opting for" >
+                        <option placeholder = "Select a Course" value="" >----Select a Course----</option>
+                        <option value="B.Tech. Anthropology">B.Tech. Anthropology</option>
+                        <option value="B.Tech. Applied Physics">B.Tech. Applied Physics</option>
+                        <option value="B.Tech. Applied Psychology">B.Tech. Applied Psychology</option>
+                        <option value="B.Tech. Architecture">B.Tech. Architecture</option>
+                        <option value="B.Tech. Art Education">B.Tech. Art Education</option>
+                        <option value="B.Tech. Art History">B.Tech. Art History</option>
+                        <option value="B.Tech. Art Studies">B.Tech. Art Studies</option>
+                        <option value="B.Tech. Biology">B.Tech. Biology</option>
+                        <option value="B.Tech. Broadcast Communication">B.Tech. Broadcast Communication</option>
+                        <option value="B.Tech. Business Administration">B.Tech. Business Administration</option>
+                        <option value="B.Tech. Business Accountancy">B.Tech. Business Accountancy</option>
+                        <option value="B.Tech. Economics">B.Tech. Economics</option>
+                        <option value="B.Tech. Chemical Engineering">B.Tech. Chemical Engineering</option>
+                        <option value="B.Tech. Chemistry">B.Tech. Chemistry</option>
+                        <option value="B.Tech. Civil Engineering">B.Tech. Civil Engineering</option>
+                        <option value="B.Tech. Computer Engineering">B.Tech. Computer Engineering</option>
+                        <option value="B.Tech. Computer Science">B.Tech. Computer Science</option>
+                        <option value="B.Tech. Electrical Engineering">B.Tech. Electrical Engineering</option>
+                        <option value="B.Tech. Electronics and Communication Engineering">B.Tech. Electronics and Communication Engineering</option>
+                        <option value="B.Tech. European Languages">B.Tech. European Languages</option>
+                        <option value="B.Tech. Film">B.Tech. Film</option>
+                        <option value="B.Tech. Geodetic Engineering">B.Tech. Geodetic Engineering</option>
+                        <option value="B.Tech. Geography">B.Tech. Geography</option>
+                        <option value="B.Tech. Geology">B.Tech. Geology</option>
+                        <option value="B.Tech. Industrial Engineering">B.Tech. Industrial Engineering</option>
+                        <option value="B.Tech. Information Technology - specialization in Web Development">B.Tech. Information Technology - specialization in Web Development</option>
+                        <option value="B.Tech. Information Technology - specialization in Mobile Applications">B.Tech. Information Technology - specialization in Mobile Applications</option>
+                        <option value="B.Tech. Information Technology - specialization in Multimedia">B.Tech. Information Technology - specialization in Multimedia</option>
+                        <option value="B.Tech. Journalism">B.Tech. Journalism</option>
+                        <option value="B.Tech. Linguistics">B.Tech. Linguistics</option>
+                        <option value="B.Tech. Mechanical Engineering">B.Tech. Mechanical Engineering</option>
+                        <option value="B.Tech. Mathematics">B.Tech. Mathematics</option>
+                        <option value="B.Tech. Metallurgical Engineering">B.Tech. Metallurgical Engineering</option>
+                        <option value="B.Tech. Music">B.Tech. Music</option>
+                        <option value="B.Tech. Philosophy">B.Tech. Philosophy</option>
+                        <option value="B.Tech. Physics">B.Tech. Physics</option>
+                        <option value="B.Tech. Political Science">B.Tech. Political Science</option>
+                        <option value="B.Tech. Psychology">B.Tech. Psychology</option>
+                    </select>
+                </div>
+    
+                <div class="form-content">
+                    <label class="required label-tag" for="Year of Joining">Year of Joining</label><br/>
+                    <input class="input" type="tel" placeholder="eg. 2021"  id="Year of Joining" name="Year of Joining" autocomplete="off" /><br/><br/>
+                </div>
+            </div>
+    
+            <div class="form-subheading">
+                Academic Details:
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <label class="required label-tag" for="High School">Name of last High School Attended:</label><br />
+                    <input class="input" type="text" placeholder = "eg. St. John's High School" id="High School" autocomplete="off" name="High School" /><br /><br />
+                    <label class="required label-tag" for="Course/Stream">Course/Stream:</label><br />
+                    <input class="input" type="text" placeholder = "eg. Computer Science" id="Course/Stream" autocomplete="off" name="Course/Stream" /><br /><br />
+                </div>  
+    
+                <div class="form-content">
+                    <label class="required label-tag" for="Year Graduated">Year Graduated</label><br/>
+                    <input class="input" type="text" placeholder="eg. 2020"  id="Year Graduated" name="Year Graduated" autocomplete="off" /><br/><br/>
+                    <label class="required label-tag" for="Percentage">Percentage obtained:</label><br />
+                    <input class="input" type="text" placeholder = "eg. 95.6" id="Percentage" autocomplete="off" name="Percentage" /><br /><br />
+                    <br><br><br>
+                    <div class="form-content">
+                        <a class="submit" href="./index.html">&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;</a><br/><br/><br/><br/>
+                    </div>
+                </div>
+                
+                <div class="form-content">
+                    <label class="required label-tag" for="Name of the Board">Name of the Board</label><br/>
+                    <input class="input" type="tel" placeholder="eg. CBSE"  id="Name of the Board" name="Name of the Board" autocomplete="off" /><br/><br/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- bottom-section -->
+    <div class="bottom-section">
+        <div class="column-container">
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>PARENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Counselling Division</div><br>
+                    <div>Hotels in England</div><br>
+                    <div>Guest House</div><br>
+                    <div>Parent Login</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>UNIVERSITY STUDENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>People Orbit</div><br>
+                    <div>General Grievance Redressal Committee</div><br>
+                    <div>Institute of Emminence (IoE)</div><br>
+                    <div>Anti Ragging Committee</div><br>
+                    <div>Industrial Visit(Format & Guidelines)</div><br>
+                    <div>NATS [National Apprenticeship Training Scheme]</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>OTHER LINKS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Right to Information</div><br>
+                    <div>About Research at Cambridge</div><br>
+                    <div>Safety</div><br>
+                    <div>Courses in Education</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>  
+            </div>
+        </div>
+        <div class="social-links">
+            <div class="social-content-text">FOLLOW US:</div>
+            <div class="social-content-img"><img src="../resources/twitter.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/facebook.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/linkedin.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/instagram.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/github.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/youtube.svg" width="20px"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">© 2021 by University of Cambridge</div>
+            <div class="footer-content">Privacy Policy</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../static/index.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../static/style.css"/>
+    <link rel="stylesheet" href="../static/new_entry.css"/>
+    <title>New Entry | University of Cambridge</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/University_of_Cambridge_coat_of_arms.svg"/>
+</head>
+<body onload="checkLoginStatus(event)">
+    <div class="topbar">
+        <div>
+            <span class="box text">Admission Test-2021 (Last date to apply 21th May, 2021)</span>
+        </div>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div>
+            <span><b><a href="./form.html" class="box link">Apply Now →</a></b></span>
+        </div>
+    </div>
+
+    <!-- main-menu -->
+    <div class="mainmenu">
+        <div class="logo">
+            <img src="../resources/college-logo.png" height="56px" onclick="window.open('index.html','_self')"/>
+        </div>
+        <div>
+            <span>
+                <button class="box button" onclick="window.open('about_us.html','_self')">About Us</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('academics.html','_self')">Academics</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('news.html','_self')">News</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('placements.html','_self')">Placements</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('gallery.html','_self')">Gallery</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('campus_life.html','_self')">Campus Life</button>
+            </span>
+            <span>
+                <button class="box button" onclick="window.open('view_data.html','_self')">Students</button>
+            </span>
+        </div>     
+        <div>
+            <button id="login" class="box button2" onclick="goToLogin()" onmouseover="mouseIn()" onmouseout="mouseOut()">Login</button>
+        </div>
+    </div>
+
+
+    
+            
+    <!-- new-entry-view-data-container -->
+    <div class="new-entry-view-data">
+        <br><br>
+        <button class="new-entry-button" onclick="window.open('new_entry.html','_self')">New Entry</button>
+        <button class="view-data-button" onclick="window.open('view_data.html','_self')">View Data</button>
+    </div>
+
+    <!-- form -->
+    <div id="form">
+        <div class="form-heading">
+            <img class="student-image" src="../resources/profile.svg" width="100px"/>
+            <div class="student-heading">
+                New Student Entry:
+            </div>
+        </div>
+        <form>
+            <div class="form-subheading">
+                General Information:
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <label class="required label-tag" for="firstname">Name:</label><br />
+                    <input type="text" class="input" placeholder = "eg. John" id="name" autocomplete="off" name="name" /><br /><br />
+                    
+                    <label class="required label-tag" for="grade">Grade:</label><br />
+                    <select name="grade" id="grade" >
+                        <option value="default" >----Select Grade----</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <div class="form-content">
+                    <label class="required label-tag" for="gender">Gender:</label><br />
+                    <select name="gender" id="gender" >
+                        <option value="default" >----Select a gender----</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <br/><br/>
+                    <label class="required label-tag" for="section">Section:</label><br />
+                    <select name="section" id="section" >
+                        <option value="default" >----Select Section----</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                    <br/><br/>
+                </div>
+
+                <div class="form-content">
+                    <label class="required label-tag" for="dob">Date of Birth:</label><br />
+                    <input class="input" type="date" id="dob" name="dob">
+                    <br/><br/>
+                    <label class="required label-tag" for="section">ID:</label><br />
+                    <input class="input" type="text" placeholder = "eg. 9A01" id="id" autocomplete="off" name="id" /><br /><br />
+                    <br/><br/>
+                </div>
+                
+                
+            </div>
+            
+            <div class="form-subheading">
+                Assessment Marks:
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <label class="required label-tag" for="physics">Physics:</label><br />
+                    <input class="input" type="text" placeholder = "eg. 80" autocomplete="off" id="physics" name="physics" /><br /><br />
+                    <label class="required label-tag" for="Postal Code">Computer Science:</label><br />
+                    <input class="input" type="text" placeholder = "eg. 80" id="cs" autocomplete="off" name="CS" /><br /><br />
+                </div>  
+                
+                <div class="form-content">
+                    <label class="required label-tag" for="Street 2">Mathematics:</label><br/>
+                    <input class="input" type="tel" placeholder="eg. 80"  id="mathematics" name="mathematics" autocomplete="off" /><br/><br/>
+                    <label class="required label-tag" for="Street 3">English:</label><br />
+                    <input type="text" class="input" id="english" placeholder="eg. 80" autocomplete="off" name="english" /><br /><br />
+                    <br><br><br>
+                    <div class="form-content">
+                        <a class="submit" onclick="new_entry(event)">&nbsp;&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;&nbsp;</a><br/><br/><br/><br/>
+                    </div>
+                </div>
+                
+                <div class="form-content">
+                    <label class="required label-tag" for="chemistry">Chemistry:</label><br />
+                    <input class="input" id = "chemistry" type="text" placeholder = "eg. 80" autocomplete="off" name="chemistry" /><br /><br />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- bottom-section -->
+    <div class="bottom-section">
+        <div class="column-container">
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>PARENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Counselling Division</div><br>
+                    <div>Hotels in England</div><br>
+                    <div>Guest House</div><br>
+                    <div>Parent Login</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>UNIVERSITY STUDENTS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>People Orbit</div><br>
+                    <div>General Grievance Redressal Committee</div><br>
+                    <div>Institute of Emminence (IoE)</div><br>
+                    <div>Anti Ragging Committee</div><br>
+                    <div>Industrial Visit(Format & Guidelines)</div><br>
+                    <div>NATS [National Apprenticeship Training Scheme]</div><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="bottom-heading">
+                    <div>OTHER LINKS</div>
+                </div>
+                <div class="bottom-content">
+                    <div>Right to Information</div><br>
+                    <div>About Research at Cambridge</div><br>
+                    <div>Safety</div><br>
+                    <div>Courses in Education</div><br>
+                    <div>Programmes Offered</div><br>
+                </div>  
+            </div>
+        </div>
+        <div class="social-links">
+            <div class="social-content-text">FOLLOW US:</div>
+            <div class="social-content-img"><img src="../resources/twitter.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/facebook.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/linkedin.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/instagram.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/github.svg" width="20px"></div>
+            <div class="social-content-img"><img src="../resources/youtube.svg" width="20px"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">© 2021 by University of Cambridge</div>
+            <div class="footer-content">Privacy Policy</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../static/index.js"></script>
+    <script type="text/javascript" src="../static/new_entry.js"></script>
+</body>
+</html>
+
